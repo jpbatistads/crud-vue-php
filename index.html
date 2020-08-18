@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <script src="https://kit.fontawesome.com/1adf460ce2.js" crossorigin="anonymous"></script>
+    <title>Crud Vue Js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <!------------->
+    <div id="app">
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col-lg-12">
+                    <p class="text-center text-light display-4 pt-2 " style= "font-size: 25px;"   >Crud Utilizando VueJs, Php & Mysqli</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!------------->
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-lg-6">
+          <h3 class="text-info">Usuário Registrado</h3>
+        </div>
+        <div class="col-lg-6">
+           <button class="btn btn-info float-right">
+        <i class="fas fa-user"></i>Novo Usúario
+        </button>
+        </div>
+    </div>
+    <hr class="bg-info">
+    <div class="alert alert-danger " v-if="errorMsg">
+        Error Message
+    </div>
+    <div class="alert alert-success" v-if=" successMsg">
+        Success Message
+    </div>
+
+</div>
+15:47
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
